@@ -41,3 +41,14 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+# Custom items added by Eric
+# Install Heroku Toolbelt
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+# Update Node
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+
+# Install new Node libraries
+npm install cheerio
+npm install commander
